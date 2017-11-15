@@ -19,7 +19,15 @@ namespace ClassesAndObjects
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Employee e1 = new Employee();
+            e1.FirstName = "Mark";
+            e1.LastName = "Long";
+            e1.Seniority = 5;
 
+            //call one of the methods
+            string p = e1.Promote();
+            MessageBox.Show(p);
+            
         }
     }
 
@@ -36,7 +44,7 @@ namespace ClassesAndObjects
             return "Employee has been promoted..";
         }
 
-        public string AnnualRevie()
+        public string AnnualReview()
         {
             return "Annual review completed...";
         }
